@@ -1,0 +1,75 @@
+{
+    "intro": {
+      "title": "Poopak Sepehr - One of the Top Companies for Supporting Iraqi Students",
+      "description": "We are a leading digital services company helping businesses grow."
+    },
+    "services": [
+      {
+        "title": "Student Services",
+        "items": [
+          "Registration",
+          "Visa Issuance",
+          "Document Translation & Legalization",
+          "Airport Transfer"
+        ]
+      },
+      {
+        "title": "Accommodation Services",
+        "items": [
+          "Dormitory Search",
+          "Apartment Rental",
+          "Hotel Booking"
+        ]
+      }
+    ],
+    "general": {
+      "contactUs": "Contact Us",
+      "khadamat": "Services",
+      "faq": "FAQ",
+      "dacuments": "Required Documents",
+      "experts": "Experts",
+      "karshenasi": "Bachelor’s",
+      "arshad": "Master’s",
+      "medical": "Medical",
+      "doctorate": "Doctorate",
+      "arzeshyabi": "Document Evaluation",
+      "moshavere": "Consultation"
+    },
+    "faq": [
+      {
+        "question": "How can I place an order?",
+        "answer": "Through our contact form or phone number."
+      },
+      {
+        "question": "How much do services cost?",
+        "answer": "It varies depending on your needs. Contact us for a free consultation."
+      }
+    ],
+    "experts": [
+      {
+        "name": "Ali Ne’mati",
+        "role": "Project Manager",
+        "photo": "./Ali.png",
+        "description": "This course complements the Next.js introductory course (although this course does not directly discuss Next.js). We plan to launch an advanced Next.js course based on this one. So if you’re already comfortable with React, you’re good to go!"
+      },
+      {
+        "name": "Ali Heydari",
+        "role": "Frontend Developer",
+        "photo": "./Ali.png",
+        "description": "This course complements the Next.js introductory course (although this course does not directly discuss Next.js). We plan to launch an advanced Next.js course based on this one. So if you’re already comfortable with React, you’re good to go!"
+      },
+      {
+        "name": "Mohammad Amin Heydari",
+        "role": "Frontend Developer",
+        "photo": "./Ali.png",
+        "description": "This course complements the Next.js introductory course (although this course does not directly discuss Next.js). We plan to launch an advanced Next.js course based on this one. So if you’re already comfortable with React, you’re good to go!"
+      }
+    ],
+    "ducuments": {
+      "karshenasi": "This course complements the introductory Next.js course (though this one doesn’t cover Next.js directly). We’ll offer an advanced Next.js course based on this and the intro course. So if you know React or are comfortable with it, you're ready!",
+      "arshad": "The only prerequisites are basic familiarity with WordPress and some knowledge of React.js. We're not starting from scratch, so you should be comfortable with ES6 and React fundamentals.",
+      "medical": "Special offer! If you're planning to buy this course, there's a 60% discount for just a few days! Don’t miss out!",
+      "doctorate": "In this project-based course, we’ll build a video platform including a custom video player and admin panel using widely used libraries."
+    }
+  }
+  
