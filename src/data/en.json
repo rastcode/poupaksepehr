@@ -49,19 +49,19 @@
       {
         "name": "Ali Ne’mati",
         "role": "Project Manager",
-        "photo": "./Ali.png",
+        "photo": "/Ali.png",
         "description": "This course complements the Next.js introductory course (although this course does not directly discuss Next.js). We plan to launch an advanced Next.js course based on this one. So if you’re already comfortable with React, you’re good to go!"
       },
       {
         "name": "Ali Heydari",
         "role": "Frontend Developer",
-        "photo": "./Ali.png",
+        "photo": "/Heydar.png",
         "description": "This course complements the Next.js introductory course (although this course does not directly discuss Next.js). We plan to launch an advanced Next.js course based on this one. So if you’re already comfortable with React, you’re good to go!"
       },
       {
         "name": "Mohammad Amin Heydari",
         "role": "Frontend Developer",
-        "photo": "./Ali.png",
+        "photo": "/Amin.png",
         "description": "This course complements the Next.js introductory course (although this course does not directly discuss Next.js). We plan to launch an advanced Next.js course based on this one. So if you’re already comfortable with React, you’re good to go!"
       }
     ],

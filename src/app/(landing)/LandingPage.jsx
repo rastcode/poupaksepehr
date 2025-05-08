@@ -39,14 +39,21 @@ function LandingPage() {
     <div ref={documentsRef}>
       <Documents />
     </div>
-    <div ref={questionsRef}>
-      <Questions />
-    </div>
     <div ref={expertsRef}>
       <Experts />
     </div>
+    <div ref={questionsRef}>
+      <Questions />
+    </div>
     <div ref={footerRef}>
-      <Footer />
+      <Footer  refs={{
+        headersRef,
+        servisesRef,
+        documentsRef,
+        questionsRef,
+        expertsRef,
+        footerRef,
+      }} />
     </div>
   </div>
   );

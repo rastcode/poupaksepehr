@@ -14,7 +14,7 @@ function Experts() {
     
   return (
     <div className="flex flex-col items-center justify-center gap-2">
-    <h1 className="font-bold">{general.experts}</h1>
+    <h1 className="font-bold text-2xl text-teal-900">{general.experts}</h1>
       <div className="w-full rounded bg-slate-50 md:flex  items-start justify-center gap-1">
     {experts.map((expert, index) => (
            <ExpertCard key={index} name={expert.name} role={expert.role} photo={expert.photo} description={expert.description} />

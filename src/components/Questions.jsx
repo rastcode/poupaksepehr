@@ -14,10 +14,10 @@ function Questions() {
     }, []);
   return (
     <div className="mt-5 flex flex-col bg-slate-50 gap-2 items-center justify-center">
-      <h1 className='font-bold'> {general.faq}</h1>
+      <h1 className="font-bold text-2xl text-teal-900"> {general.faq}</h1>
      
       {faq.map((item, index) => (
-        <div key={index} data-aos="fade-up" className="mt-2 w-full flex flex-col bg-slate-50 gap-2 items-center justify-center">
+        <div key={index} data-aos="fade-up" className="mt-1 w-full flex flex-col bg-slate-50  items-center justify-center">
           <Accordion title={item.question} description={item.answer} />
         </div>
       ))}

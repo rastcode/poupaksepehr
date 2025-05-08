@@ -1,15 +1,19 @@
 "use client";
 
-import React from "react";
-
-
+import React, { useState } from "react";
 import "aos/dist/aos.css";
 
 function Card({ title, items }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleCard = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div
       data-aos="fade-left"
-      className="md:shadow-xl md:rounded-lg w-full  pb-0 flex  items-start  flex-col rounded-b-xl shadow-sm   gap-2"
+      className="md:shadow-xl md:rounded-lg w-full pb-0 flex items-start flex-col rounded-b-xl shadow-sm gap-2 overflow-hidden transition-all duration-150"
     >
       <div className="border border-teal-600 p-2 rounded-lg m-2">
         <svg
@@ -27,22 +31,36 @@ function Card({ title, items }) {
           />
         </svg>
       </div>
-      <h1 className=" m-2 font-bold text-xl text-slate-800">{title}</h1>
-      <div className="m-2 w-full  mb-3 text-slate-600">
-        <ol>
+
+      <h1 className="m-2 font-bold text-xl text-slate-800">{title}</h1>
+
+      {/* محتوای بازشونده */}
+      <div
+        className={`m-2 w-full text-slate-600 transition-all duration-500 overflow-hidden ${
+          isOpen ? "max-h-[500px]" : "max-h-20"
+        }`}
+      >
+        <ol className="list-decimal list-inside  ml-6 space-y-1 text-gray-700">
           {items.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
         </ol>
       </div>
-      <div className=" w-full bg-slate-50  flex  justify-center curor-pointer p-1 rounded-b-xl  ">
+
+      {/* دکمه‌ی باز و بسته‌سازی */}
+      <div
+        onClick={toggleCard}
+        className="w-full bg-slate-50 flex justify-center cursor-pointer p-2 rounded-b-xl"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="size-5 stroke-teal-700 hover:rotate-180 transition-all duration-150"
+          className={`size-5 stroke-teal-700 transition-transform duration-150 ${
+            isOpen ? "rotate-180" : ""
+          }`}
         >
           <path
             strokeLinecap="round"

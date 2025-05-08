@@ -13,7 +13,7 @@ function ExpertCard({name,role,photo,description}) {
         >
           <div className="flex  relative w-full h-full items-center justify-center">
             <Image
-              src='/Ali.png'
+              src={photo}
               fill
               className="object-cover "
               alt="Picture of the author"
