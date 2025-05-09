@@ -8,33 +8,25 @@ import ar from "../data/ar.json";
 
 const ContentContext = createContext();
 
-export const ContentProvider = ({ children }) => {
+export const ContentProvider = ({ children, initialLanguage = "ar" }) => {
+  
   // state برای زبان و محتوا
-  const [language, setLanguage] = useState("ar"); // زبان پیش‌فرض فارسی
-  const [content, setContent] = useState(ar); // محتوای پیش‌فرض فارسی
+  const [language, setLanguage] = useState(initialLanguage);
+  const [content, setContent] = useState(ar);
 
   // استفاده از useEffect برای بارگذاری زبان ذخیره‌شده در localStorage
   useEffect(() => {
-    const savedLang = localStorage.getItem("lang");
-    if (savedLang) {
-      setLanguage(savedLang);
-      if (savedLang === "fa") {
-        setContent(fa);
-      } else if (savedLang === "en") {
-        setContent(en);
-      } else if (savedLang === "ar") {
-        setContent(ar);
-      }
-    }
-  }, []);
+    const savedLang = localStorage.getItem("lang") || initialLanguage;
+    setLanguage(savedLang);
+    setContent(savedLang === "fa" ? fa : savedLang === "en" ? en : ar);
+  }, [initialLanguage]);
+
 
   // تابع تغییر زبان
   const toggleLanguage = (lang) => {
-    if (lang === "fa") setContent(fa);
-    else if (lang === "en") setContent(en);
-    else if (lang === "ar") setContent(ar);
+    setContent(lang === "fa" ? fa : lang === "en" ? en : ar);
     setLanguage(lang);
-    localStorage.setItem("lang", lang); // ذخیره زبان در localStorage
+    localStorage.setItem("lang", lang);
   };
 
   return (

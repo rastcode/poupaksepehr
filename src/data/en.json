@@ -1,75 +1,159 @@
 {
-    "intro": {
-      "title": "Poopak Sepehr - One of the Top Companies for Supporting Iraqi Students",
-      "description": "We are a leading digital services company helping businesses grow."
+  "intro": {
+    "title": "We Open the Gates of Knowledge and Global Opportunities for You",
+    "description": "Poupak Sepehr International Institute for the Recruitment and Admission of International Students, officially licensed by the Ministry of Science, Research, and Technology of the Islamic Republic of Iran, specializes in securing admissions for international students at prestigious Iranian universities. The institute aims to facilitate the admission process for students from various countries and offers its services for undergraduate, master's, and doctoral programs in diverse fields. With its experience and expertise, Poupak Sepehr paves the way for international students to pursue higher education in Iran."
+  },
+  "lang": "en"
+    
+  ,
+  "services": [
+    {
+      "title": "Golden Services",
+      "items": [
+        "Consultation on university and program selection and required documents",
+        "Guidance on preparing and completing the necessary documents for admission",
+        "Submitting and following up on documents",
+        "Obtaining relevant codes from the Ministry of Science of Iran",
+        "Following up on initial admission procedures",
+        "Obtaining preliminary admission",
+        "Obtaining final admission",
+        "Student ID card issuance",
+        "Airport transfer services",
+        "University system registration and profile completion",
+        "Obtaining a study visa"
+      ]
     },
-    "services": [
-      {
-        "title": "Student Services",
-        "items": [
-          "Registration",
-          "Visa Issuance",
-          "Document Translation & Legalization",
-          "Airport Transfer"
-        ]
-      },
-      {
-        "title": "Accommodation Services",
-        "items": [
-          "Dormitory Search",
-          "Apartment Rental",
-          "Hotel Booking"
-        ]
-      }
-    ],
-    "general": {
-      "contactUs": "Contact Us",
-      "khadamat": "Services",
-      "faq": "FAQ",
-      "dacuments": "Required Documents",
-      "experts": "Experts",
-      "karshenasi": "Bachelor’s",
-      "arshad": "Master’s",
-      "medical": "Medical",
-      "doctorate": "Doctorate",
-      "arzeshyabi": "Document Evaluation",
-      "moshavere": "Consultation"
+    {
+      "title": "Silver Services",
+      "items": [
+        "Consultation on university and program selection and required documents",
+        "Submitting and following up on documents for preliminary admission",
+        "Obtaining relevant codes from the Ministry of Science of Iran",
+        "Following up on initial admission procedures",
+        "Obtaining preliminary admission",
+        "Obtaining final admission",
+        "Student ID card issuance"
+      ]
     },
-    "faq": [
-      {
-        "question": "How can I place an order?",
-        "answer": "Through our contact form or phone number."
-      },
-      {
-        "question": "How much do services cost?",
-        "answer": "It varies depending on your needs. Contact us for a free consultation."
-      }
-    ],
-    "experts": [
-      {
-        "name": "Ali Ne’mati",
-        "role": "Project Manager",
-        "photo": "/Ali.png",
-        "description": "This course complements the Next.js introductory course (although this course does not directly discuss Next.js). We plan to launch an advanced Next.js course based on this one. So if you’re already comfortable with React, you’re good to go!"
-      },
-      {
-        "name": "Ali Heydari",
-        "role": "Frontend Developer",
-        "photo": "/Heydar.png",
-        "description": "This course complements the Next.js introductory course (although this course does not directly discuss Next.js). We plan to launch an advanced Next.js course based on this one. So if you’re already comfortable with React, you’re good to go!"
-      },
-      {
-        "name": "Mohammad Amin Heydari",
-        "role": "Frontend Developer",
-        "photo": "/Amin.png",
-        "description": "This course complements the Next.js introductory course (although this course does not directly discuss Next.js). We plan to launch an advanced Next.js course based on this one. So if you’re already comfortable with React, you’re good to go!"
-      }
-    ],
-    "ducuments": {
-      "karshenasi": "This course complements the introductory Next.js course (though this one doesn’t cover Next.js directly). We’ll offer an advanced Next.js course based on this and the intro course. So if you know React or are comfortable with it, you're ready!",
-      "arshad": "The only prerequisites are basic familiarity with WordPress and some knowledge of React.js. We're not starting from scratch, so you should be comfortable with ES6 and React fundamentals.",
-      "medical": "Special offer! If you're planning to buy this course, there's a 60% discount for just a few days! Don’t miss out!",
-      "doctorate": "In this project-based course, we’ll build a video platform including a custom video player and admin panel using widely used libraries."
+    {
+      "title": "Bronze Services",
+      "items": [
+        "Consultation on university and program selection and required documents",
+        "Submitting and following up on documents for preliminary admission",
+        "Obtaining relevant codes from the Ministry of Science of Iran",
+        "Following up on initial admission procedures",
+        "Obtaining preliminary admission"
+      ]
+    },
+    {
+      "title": "Translation and Certifications",
+      "items": [
+        "Translation of documents",
+        "Translation of enrollment certificates",
+        "Obtaining certifications from the Ministry of Foreign Affairs",
+        "Obtaining certifications from the Ministry of Justice",
+        "Obtaining consular certifications"
+      ]
     }
+  ],
+  "general": {
+    "contactUs": "Contact Us",
+    "khadamat": "Services",
+    "faq": "Frequently Asked Questions",
+    "dacuments": "Required Documents",
+    "experts": "Experts",
+    "karshenasi": "Bachelor's",
+    "arshad": "Master's",
+    "medical": "Medical",
+    "doctorate": "Doctorate",
+    "arzeshyabi": "Document Evaluation",
+    "moshavere": "Consultation",
+    "noData": "No documents have been registered for this level."
+  },
+  "faq": [
+    {
+      "question": "Does Poupak Sepehr Institute have an official license?",
+      "answer": "Yes, Poupak Sepehr Institute is officially licensed by the Ministry of Science, Research, and Technology."
+    },
+    {
+      "question": "What documents are required for admission to Iranian universities?",
+      "answer": "Required documents include official translations of academic certificates, enrollment certificates, passport copies, personal photos, and in some cases, a CV or motivation letter. Our institute will assist you throughout the preparation and submission process."
+    },
+    {
+      "question": "What is the difference between VIP, Silver, and Bronze services?",
+      "answer": "VIP services provide full support from consultation to obtaining a visa and final university registration. Silver and Bronze services cover fewer steps and offer limited support compared to the VIP package."
+    },
+    {
+      "question": "Does the institute provide translation and certification services?",
+      "answer": "Yes, we offer official document translation services and assist in obtaining certifications from the Ministry of Foreign Affairs, the Ministry of Justice, and the Consulate."
+    },
+    {
+      "question": "How can I consult with the institute’s experts?",
+      "answer": "You can contact us via the 'Contact Us' section on the website or visit our office for in-person consultations at various academic levels."
+    },
+    {
+      "question": "Is it possible to obtain a student visa through the institute?",
+      "answer": "Yes, Poupak Sepehr Institute professionally and comprehensively handles all procedures for obtaining final admission and a student visa."
+    }
+  ],
+  "experts": [
+    {
+      "name": "Mohammad Amin Heydari",
+      "role": "General Manager",
+      "photo": "/Amin.png",
+      "description": "Expert in Arabic language and responsible for consular affairs."
+    },
+    {
+      "name": "Ali Naemati",
+      "role": "English Language Expert",
+      "photo": "/Ali.png",
+      "description": "Expert and consultant in IT fields in English language."
+    },
+    {
+      "name": "Ali Heydari",
+      "role": "Basic Sciences Expert",
+      "photo": "/Heydar.png",
+      "description": "Expert and consultant in basic sciences, medicine, and paramedical fields."
+    }
+  ],
+  "ducuments": {
+    "karshenasi": [
+      "Personal photo 600 × 400",
+      "Clear passport copy",
+      "High school transcript",
+      "High school diploma",
+      "Curriculum Vitae (CV)",
+      "Minimum GPA of 60 or higher (varies by university)",
+      "For more information, please contact our experts"
+    ],
+    "arshad": [
+      "Personal photo 600 × 400",
+      "High-quality passport photo 800 × 600",
+      "High school transcript",
+      "High school diploma",
+      "Bachelor’s transcript",
+      "Bachelor’s degree certified by the Iranian Embassy",
+      "Curriculum Vitae (CV)",
+      "For more information, please contact our experts"
+    ],
+    "doctorate": [
+      "Personal photo 400 × 600",
+      "High-quality passport photo 600 × 800",
+      "Bachelor’s degree and transcript in Persian or English",
+      "Master’s degree and transcript in Persian or English",
+      "Curriculum Vitae (CV)",
+      "Two recommendation letters from university professors",
+      "Minimum GPA of 80 or higher (varies by university)",
+      "For more information, please contact our experts"
+    ],
+    "medical": [
+      "Personal photo 600 × 400",
+      "Clear passport copy",
+      "High school transcript",
+      "High school diploma",
+      "Curriculum Vitae (CV)",
+      "Minimum GPA of 90 or higher (varies by university)",
+      "For more information, please contact our experts"
+    ]
   }
-  
+}

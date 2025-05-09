@@ -1,19 +1,21 @@
 "use client";
-
+import { useContent } from "../contex/ContentContext";
 import React, { useState } from "react";
 import "aos/dist/aos.css";
 
 function Card({ title, items }) {
   const [isOpen, setIsOpen] = useState(false);
-
+  const { lang } = useContent();
   const toggleCard = () => {
     setIsOpen(!isOpen);
   };
 
   return (
-    <div
+    <article
+    dir={`${lang==='en'?"ltr":"rtl"}`}
       data-aos="fade-left"
       className="md:shadow-xl md:rounded-lg w-full pb-0 flex items-start flex-col rounded-b-xl shadow-sm gap-2 overflow-hidden transition-all duration-150"
+      aria-labelledby={`${title.replace(/\s+/g, "-")}-title`}
     >
       <div className="border border-teal-600 p-2 rounded-lg m-2">
         <svg
@@ -32,7 +34,12 @@ function Card({ title, items }) {
         </svg>
       </div>
 
-      <h1 className="m-2 font-bold text-xl text-slate-800">{title}</h1>
+      <h2
+        id={`${title.replace(/\s+/g, "-")}-title`}
+        className="m-2 font-bold text-xl text-slate-800"
+      >
+        {title}
+      </h2>
 
       {/* محتوای بازشونده */}
       <div
@@ -40,7 +47,7 @@ function Card({ title, items }) {
           isOpen ? "max-h-[500px]" : "max-h-20"
         }`}
       >
-        <ol className="list-decimal list-inside  ml-6 space-y-1 text-gray-700">
+        <ol className="list-decimal list-inside ml-6 space-y-1 text-gray-700">
           {items.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
@@ -48,9 +55,11 @@ function Card({ title, items }) {
       </div>
 
       {/* دکمه‌ی باز و بسته‌سازی */}
-      <div
+      <button
         onClick={toggleCard}
         className="w-full bg-slate-50 flex justify-center cursor-pointer p-2 rounded-b-xl"
+        aria-expanded={isOpen}
+        aria-controls={`${title.replace(/\s+/g, "-")}-content`}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -68,8 +77,8 @@ function Card({ title, items }) {
             d="m19.5 8.25-7.5 7.5-7.5-7.5"
           />
         </svg>
-      </div>
-    </div>
+      </button>
+    </article>
   );
 }
 
