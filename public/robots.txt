@@ -1,4 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
+# Host
+Host: https://poupaksepehr.com
+
+# Sitemaps
 Sitemap: https://poupaksepehr.com/sitemap.xml
