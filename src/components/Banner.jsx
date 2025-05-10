@@ -2,11 +2,14 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const images = ["/b1.webp", "/b2.webp", "/b3.webp"];
+const images = [
+  { src: "/b1.webp", alt: "ارائه خدمات مشاوره تخصصی برای دانشجویان بین‌المللی" },
+  { src: "/b3.webp", alt: "دریافت پذیرش تحصیلی در ایران با موسسه پوپک سپهر" },
+];
 
 function Banner() {
   const [index, setIndex] = useState(0);
-  const [direction, setDirection] = useState("left"); // راست به چپ
+  const [direction, setDirection] = useState("left");
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -18,12 +21,15 @@ function Banner() {
   }, []);
 
   return (
-    <div className="relative w-full aspect-[12/7] overflow-hidden">
-      {images.map((src, i) => (
+    <section
+      className="relative w-full aspect-[12/7] overflow-hidden"
+      aria-label="اسلایدر معرفی خدمات موسسه پوپک سپهر"
+    >
+      {images.map((image, i) => (
         <Image
           key={i}
-          src={src}
-          alt={`Slide ${i + 1}`}
+          src={image.src}
+          alt={image.alt}
           fill
           className={`object-cover absolute inset-0 w-full h-full transition-transform duration-700 ease-in-out ${
             i === index
@@ -33,10 +39,11 @@ function Banner() {
               : "-translate-x-full opacity-0 z-10"
           }`}
           sizes="100vw"
-          loading={i === 0 ? "eager" : "lazy"} // Preload only first image
+          priority={i === 0}
+          loading={i === 0 ? "eager" : "lazy"}
         />
       ))}
-    </div>
+    </section>
   );
 }
 
