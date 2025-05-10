@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import LanguageSwitcher from "./LanguageSwitcher";
+import LanguageSwitcher from "@/components/languageSwitcher";
 import { useContent } from "../contex/ContentContext";
 export default function MobileSidebar({ refs }) {
   const [isOpen, setIsOpen] = useState(false);
