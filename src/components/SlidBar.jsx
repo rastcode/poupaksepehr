@@ -60,7 +60,7 @@ export default function MobileSidebar({ refs }) {
       {/* Backdrop */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-40"
+          className="fixed inset-0 bg-black bg-opacity-50 z-30"
           onClick={() => setIsOpen(false)}
         />
       )}
@@ -74,7 +74,9 @@ export default function MobileSidebar({ refs }) {
       >
         <nav aria-label="Mobile Navigation">
           <ul className="space-y-4 text-slate-800 font-semibold text-lg mt-16">
-            <li><LanguageSwitcher /></li>
+            <li>
+              <LanguageSwitcher />
+            </li>
             <li>
               <button
                 onClick={() => handleNavClick(refs?.servisesRef)}

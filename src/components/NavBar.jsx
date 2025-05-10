@@ -29,7 +29,7 @@ function NavBar({ refs }) {
     <>
       {/* Main Navbar */}
       <nav
-        className={`fixed w-full max-w-screen-xl top-0 z-50 transition-all duration-150 md:rounded-b-lg mx-3 p-4 ${
+        className={`fixed w-full max-w-screen-xl top-0 z-50 transition-all duration-150 md:rounded-b-lg mx-3 p-3 ${
           scrolled
             ? "bg-slate-100 bg-opacity-75 backdrop-blur-sm border-b-2"
             : "bg-transparent"
@@ -67,10 +67,10 @@ function NavBar({ refs }) {
         </div>
 
         {/* Mobile Navbar */}
-        <div className="p-3 w-full flex justify-end  items-center md:hidden">
+        <div className="p-3 w-full flex justify-end  items-center md:hidden ">
         
           
-            <MobileSidebar />
+           
           <Link
             href="/"
             className="text-xl font-bold flex  items-center gap-2"

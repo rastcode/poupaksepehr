@@ -9,6 +9,7 @@ import Servises from "@/components/Servises";
 import React, { useRef } from "react";
 import Headers from "sections/Headers";
 import Head from "next/head";
+import MobileSidebar from "@/components/SlidBar";
 
 export default function Page() {
   const headersRef = useRef(null);
@@ -81,7 +82,14 @@ export default function Page() {
             footerRef,
           }}
         />
-
+ <MobileSidebar  refs={{
+            headersRef,
+            servisesRef,
+            documentsRef,
+            questionsRef,
+            expertsRef,
+            footerRef,
+          }} />
         <Banner />
 
         <section ref={servisesRef} aria-labelledby="services-section">
